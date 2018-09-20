@@ -1,0 +1,45 @@
+@media only screen
+and (max-width: 480px) {
+  html {
+    font-size: 8px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  a {
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+  .main {
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    top: 2rem;
+  }
+}
+
+@media only screen
+and (min-width: 1536px)
+and (orientation: landscape) {
+  html {
+    font-size: 32px;
+  }
+}
+
+@media only screen
+and (min-width: 1024px)
+and (max-width: 1535px)
+and (orientation: landscape) {
+  html {
+    font-size: 18px;
+  }
+}
