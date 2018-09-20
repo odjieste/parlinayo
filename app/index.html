@@ -1,0 +1,122 @@
+<!doctype html>
+<html itemscope="" itemtype="http://schema.org/Webpage" lang="en" xmlns:og="http://ogp.me/ns#">
+  <head>
+    <!-- It's 2015 People -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <!-- Default Meta Tags -->
+    <title>{{SITE_TITLE}}</title>
+    <meta name="description" content="{{SITE_DESCRIPTION}}" />
+    <meta name="keywords" content="{{#KEYWORDS}}{{.}}{{/KEYWORDS}}" />
+    <meta name="author" content="{{SITE_AUTHOR}}" />
+
+    <!-- DNS Prefetch / Add subdomains as required -->
+    <!-- {{#DOMAINS}} -->
+    <link rel="dns-prefetch" href="{{{.}}}" />
+    <!-- {{/DOMAINS}} -->
+
+    <!-- Google's Schema Org -->
+    <meta content="{{{ASSET_128}}}" itemprop="image" />
+
+    <!-- Google's+ Author URL -->
+    <link rel="author" href="{{{GOOGLE_PLUS_URL}}}"/>
+
+    <!-- Canonical URL -->
+    <link href="{{{SITE_URL}}}" rel="canonical">
+
+    <!-- Facebook's Open Graph Meta Tags -->
+    <meta property="og:url" content="{{{SITE_URL}}}" />
+    <meta property="og:site_name" content="{{SITE_TITLE}}" />
+    <meta property="og:description" content="{{SITE_DESCRIPTION}}" />
+    <meta property="og:image" content="{{{ASSET_COVER_1200}}}" />
+    <meta property="og:type" content="website" />
+
+    <!-- Apple's Mobile Web App Title -->
+    <meta name="apple-mobile-web-app-title" content="{{SITE_TITLE}}" />
+
+    <!-- Twitter Cards Meta Tags -->
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="{{{TWITTER_HANDLE}}}" name="twitter:site" />
+    <meta content="{{{SITE_URL}}}" name="twitter:url" />
+    <meta content="{{SITE_TITLE}}" name="twitter:title" />
+    <meta content="{{SITE_DESCRIPTION}}" name="twitter:description" />
+    <meta content="{{{ASSET_COVER_560}}}" name="twitter:image" />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/ico" href="{{{FAVICON}}}"  />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{{FAVICON}}}" sizes="16x16" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{{FAVICON}}}" sizes="16x16" />
+    <link rel="icon" type="image/x-icon" href="{{{FAVICON}}}" sizes="16x16" />
+
+    <!-- Responsive Device Meta Tag -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+
+    <!-- SEO Link Helpers -->
+    <link rel="home" href="{{{SITE_URL}}}" />
+    <link rel="index" href="{{{SITE_URL}}}{{{SITE_SITEMAP_URL}}}" />
+
+    <!-- Apple Icon's, place apple-touch-icon(s) in the root directory -->
+    <link rel="apple-touch-icon" type="image/png" href="{{{APPLE_ICON}}}" />
+
+    <!-- Fallback Image for Everything else -->
+    <link rel="image_src" href="{{{ASSET_180}}}" />
+
+    <!-- Google Fonts: Roboto -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400|Rokkitt:400&text=Jose%20Aguinaga" />
+
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/sanity.css" />
+    <link rel="stylesheet" href="styles/background.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <!-- endbuild -->
+  
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="main">
+      <div itemscope itemtype="http://schema.org/Person">
+        <img src="{{{ASSET_180}}}" itemprop="image" style='visibility: hidden;' alt="Jose Aguinaga"/>  
+        <h1>
+           <span itemprop="givenName">Jose</span>
+           <span itemprop="familyName">Aguinaga</span>
+           <meta itemprop="gender" content="Male"/>
+        </h1>
+        <div style='visibility:hidden;' itemprop="homeLocation" itemscope itemtype="http://schema.org/PostalAddress">
+            <strong>Located in:</strong>
+            <span itemprop="addressLocality">Zürich</span>,
+            <div itemprop="addressCountry" itemscope itemtype="http://schema.org/Country">
+              <span itemprop="name">Switzerland</span>
+            </div>
+        </div>
+        <div itemprop="description">
+            <p>Web Engineer. UX & Interactions Designer. Full-Stack Javascript Developer. Head of Web @Centralway.</p>
+            <ul>
+              <li><a class="homepage-links" target="_blank" href="https://twitter.com/jjperezaguinaga">Twitter</a> </li>
+              <li><a class="homepage-links" href="/articles">Articles</a></li>
+              <li><a class="homepage-links" target="_blank" href="http://codepen.io/jjperezaguinaga/">Code</a></li>
+              <li><a class="homepage-links" href="mailto:me@jjperezaguinaga.com?subject=Contact%20Request">Email</a></li>
+              <li><a class="homepage-links" href="https://ch.linkedin.com/in/jjperezaguinaga" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+  </body>
+</html>
